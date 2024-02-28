@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwyeohibfpkyy"]
+
+[ext_resource type="Script" path="res://scens/script/lazer.gd" id="1_45xsx"]
+[ext_resource type="Texture2D" uid="uid://dv4pgg4csyxnn" path="res://Material rescue/bulllet.png" id="1_mro01"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_488hw"]
+size = Vector2(104, 56)
+
+[node name="Lazer" type="Area2D"]
+script = ExtResource("1_45xsx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-07, 0)
+scale = Vector2(1.04, 1.12)
+texture = ExtResource("1_mro01")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_488hw")
